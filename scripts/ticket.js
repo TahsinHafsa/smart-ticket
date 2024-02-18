@@ -18,22 +18,29 @@ function next(){
 
 // calculation
 
-var totalPrice = 0;
-var seatCount = 0;
+const alBtn = document.querySelectorAll('#seat-id');
+let count = 0;
+let decrease =16;
 
-function updatePrice(price){
-    totalPrice += price;
-    document.getElementById('total-price').textContent = totalPrice;
+for(const btn of alBtn){
+   btn.addEventListener('click',function(e){
+    count = count + 1;
+    setInnerText('seat',count)
+   })
 }
 
-function updateSeatCount(){
-    seatCount--;
-    document.getElementById('seat-count').textContent = seatCount;
+function setInnerText(id,value){
+    document.getElementById(id).innerText = value;
 }
 
-function bookSeat (seatId,price){
-    var seat = document.getElementById('seat-id').addEventListener('click', function(){
-        updatePrice(price);
-        updateSeatCount();
-    });
+
+for(const btn of alBtn){
+    btn.addEventListener('click',function(e){
+        decrease = decrease - 1;
+        setInnerText('seat-count',decrease)
+    })
+}
+
+function setInnerText(id,value){
+    document.getElementById(id).innerText = value;
 }
