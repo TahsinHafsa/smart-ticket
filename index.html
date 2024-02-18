@@ -84,7 +84,7 @@
 
           <main>
             <!-- offer section -->
-            <section class="items-center w-130 h-100">
+            <section class="items-center w-130 h-100 ">
                 <h1 class="text-3xl text-black font-semibold">Best Offers For You</h1>
                 
                     <!-- first card -->
@@ -135,7 +135,7 @@
             </section>
 
             <!-- parobahan section -->
-            <section class="w-1170 h-550 gap-6">
+            <section class="w-1170 h-550 gap-6 flex items-center justify-center min-h-screen" >
               <div class="text-center my-9">
                 <h1 class="text-black font-5xl font-bold ">Greeen Line paribahan</h1>
                 <p class="text-gray-700 font-3xl">yes,you can run unit test and view the results directly within the app.The integrated testing features allow for a streamlined</p>
@@ -154,7 +154,7 @@
                       <p class="text-gray-700">coach-009-WEB!AC_Business</p>
                     </div>
                     </div>
-                    <button class="btn btn-outline btn-secondary text-green-600 bg-green-200 border-green-600"><img src="images/seat-green.png" alt="">Seats left</button>
+                    <button class="btn btn-outline btn-secondary text-green-600 bg-green-200 border-green-600"><img src="images/seat-green.png" alt=""><span>16</span> Seats left</button>
                   </div>
                   <div class="card w-96 h-50 bg-gray-100 shadow-xl">
                     <div class="card-body">
@@ -192,7 +192,7 @@
             </section>
 
             <!-- bus seat -->
-            <section class="grid-cols-2 w-1170 h-1000">
+            <section class="grid-cols-2 w-1170 h-1000 flex ">
               <!-- bus ticket -->
               <div>
                 <h3 class="font-semibold text-black">Select Your Seat</h3><hr>
@@ -266,85 +266,58 @@
               </div>
 
         </div>
-        <!-- Row E -->
-        <div  class="flex">
-          <div><p class="text-gray-600">E</p></div>
-            <div class="flex gap-8">
-              <div class="gap-5">
-                <button class="btn btn-neutral bg-gray-200 text-gray-600">E1</button>
-                <button class="btn btn-neutral bg-gray-200 text-gray-600">E2</button>
-              </div>
-              <div class="gap-5">
-                <button class="btn btn-neutral bg-gray-200 text-gray-600">E3</button>
-                <button class="btn btn-neutral bg-gray-200 text-gray-600">E4</button>
-
-              </div>
-            </div>
-
+      </section>
+      
+      <!-- tk calculation -->
+    
+    <div>
+      <div class="bg-gray-200 w-[500] rounded-md">
+        <h3 class="text-black font-semibold">Select Your Seat </h3>
+      <div class="flex gap-8">
+        <h3 class="text-black font-semibold"><span>Seat</span></h3>
+        <h3 class="text-black font-semibold"><Span>Class</Span></h3>
+        <h3 class="text-black font-semibold"><span>Price</span></h3>
+      </div><hr>
+      <div class="flex gap-11">
+        <h3 class="text-black font-semibold">Total Price</h3>
+        <h3 class="text-black font-semibold"><span>BDT</span></h3>
       </div>
-      <!-- Row F -->
-      <div  class="flex">
-        <div><p class="text-gray-600">F</p></div>
-          <div class="flex gap-8">
-            <div class="gap-5">
-              <button class="btn btn-neutral bg-gray-200 text-gray-600">F1</button>
-              <button class="btn btn-neutral bg-gray-200 text-gray-600">F2</button>
-            </div>
-            <div class="gap-5">
-              <button class="btn btn-neutral bg-gray-200 text-gray-600">F3</button>
-              <button class="btn btn-neutral bg-gray-200 text-gray-600">F4</button>
+      <div>
+        <input class="bg-white" type="text" id="couponcode" placeholder="Have a coupon?">
+        <button class="btn btn-success text-white">Apply</button>
+      </div>
+      </div>
+      <button class="btn btn-success text-white w-96 h-11 text-3xl font-semibold my-8">Next</button>
 
-            </div>
-          </div>
 
     </div>
-    <!-- Row G -->
-    <div  class="flex">
-      <div><p class="text-gray-600">G</p></div>
-        <div class="flex gap-8">
-          <div class="gap-5">
-            <button class="btn btn-neutral bg-gray-200 text-gray-600">G1</button>
-            <button class="btn btn-neutral bg-gray-200 text-gray-600">G2</button>
-          </div>
-          <div class="gap-5">
-            <button class="btn btn-neutral bg-gray-200 text-gray-600">G3</button>
-            <button class="btn btn-neutral bg-gray-200 text-gray-600">G4</button>
-
-          </div>
-        </div>
-
-  </div>
-  <!-- Row H -->
-  <div  class="flex">
-    <div><p class="text-gray-600">H</p></div>
-      <div class="flex gap-8">
-        <div class="gap-5">
-          <button class="btn btn-neutral bg-gray-200 text-gray-600">H1</button>
-          <button class="btn btn-neutral bg-gray-200 text-gray-600">H2</button>
-        </div>
-        <div class="gap-5">
-          <button class="btn btn-neutral bg-gray-200 text-gray-600">H3</button>
-          <button class="btn btn-neutral bg-gray-200 text-gray-600">H4</button>
-
-        </div>
-      </div>
-
-</div>
-
-                </section>
-
-              <!-- tk calculation -->
-              <div>
-
-              </div>
+    
 
 
-            </section>
+    </section>
+
+    <!-- sucess section -->
+    <section class="w-780 h-480 justify-center min-h-screen items-center hidden">
+      <img src="images/success.png" alt="">
+      <h1 class="text-green-500 font-semibold text-4xl">Success</h1>
+      <p class="text-black ">Thank you for booking Our bus Seats,</p>
+      <p class="text-black">We are working heard to find the best service and deals for you</p>
+      <p class="text-gray-500">Shortly you will find an confirmation in your email</p>
+      <button class="btn btn-success text-white  text-3xl font-semibold my-8 rounded-lg">Continue</button>
+
+
+
+
+    </section>
 
 
 
 
           </main>
+
+          <footer class="bg-black w-">
+
+          </footer>
     
 </body>
 </html>
