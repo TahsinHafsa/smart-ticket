@@ -275,17 +275,16 @@
         <h3 class="text-black font-semibold">Select Your Seat </h3>
       <div class="flex gap-8">
         <h3 class="text-black font-semibold">Seat=<span id="seat"></span></h3>
-        <h3 class="text-black font-semibold"><Span>Class</Span></h3>
-        <h3 class="text-black font-semibold"><span>Price</span></h3>
+        <h3 class="text-black font-semibold">Class=<Span id="class-name"></Span></h3>
+        <h3 class="text-black font-semibold">Price=<span id="seat-price"></span>BDT</h3>
       </div><hr>
-      <div class="flex gap-11">
-        <h3 id="total-price" class="text-black font-semibold">Total Price</h3>
-        <h3 class="text-black font-semibold"><span>BDT</span></h3>
-      </div>
+      
       <div>
-        <input class="bg-white" type="text" id="couponcode" placeholder="Have a coupon?">
-        <button class="btn btn-success text-white">Apply</button>
+        <input  class="bg-white" type="text" id="coupon" placeholder="Have a coupon?">
+        <button id="apply-code" class="btn btn-success text-white">Apply</button>
       </div>
+      <div><h3 class="text-black font-semibold">Grand Total=<span id="grand"></span>BDT</h3> </div>
+
       </div>
       <button onclick="next()" class="btn btn-success text-white w-96 h-11 text-3xl font-semibold my-8 ">Next</button>
 
